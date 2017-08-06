@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS를 이용한 테이블</title>
+	<style type="text/css">
+		table{
+			border-collapse: collapse;
+		}
+		td, th{
+			border: dotted 1px black;
+			padding: 5px;
+			margin: 5px;
+		}
+		tbody td{
+			background: gray;
+		}
+	</style>
+</head>
+<body>
+	<table border="1">
+	<caption>책 정보 보기</caption>
+	<thead style="background:green">
+		<tr>
+			<th id="title">책이름</th>
+			<th id="author">저자</th>
+			<th id="price">가격</th>
+		</tr>
+	</thead>
+	
+	<tfoot style="background:yellow">
+		<tr>
+			<td colspan="2"  headers="title">합계</td>
+			<td headers="price">80,000</td>
+		</tr>
+	</tfoot>
+	
+	<tbody>
+		<tr>
+			<td headers="title">HTML5</td>
+			<td headers="author">팀버튼</td>
+			<td headers="price">35,000</td>
+		</tr>
+		<tr>
+			<td headers="title">jQuery</td>
+			<td headers="author">강쿼리</td>
+			<td headers="price">20,000</td>
+		</tr>
+		<tr>
+			<td headers="title">Android</td>
+			<td headers="author">이안나</td>
+			<td headers="price">25,000</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+<!-- 
+※웹표준에서 테이블 태그를 사용하는경우
+   - 스프레드쉬트(일상 업무에 많이 사용되는 도표형태의 양식)
+   - 차트
+   - 스케즐
+   - 달력
+
+(홈페이지의 레이아웃작업을 할경우에는 table태그를 사용하지 않고 div태그를 이용)
+ -->

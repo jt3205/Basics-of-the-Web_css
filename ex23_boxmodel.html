@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;  padding: 0;  border: 0;
+	}
+	div.aa{
+		width: 80px;
+		height: 100px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: black;
+		background-color: yellow;
+		padding: 10px;   /* 안쪽 여백 */
+		float: left;
+		margin-right: 10px;
+	}
+	
+	div.bb{
+		width: 98px;
+		background-color: blue;
+		clear:both;
+	}
+	
+	div.cc{
+		width: 40px;
+		height:150px; 
+		background-color: green;
+		float: left;
+	}
+</style>
+</head>
+<body>
+	<div class="aa">
+		AA
+	</div>
+	<div class="cc">
+		CC
+	</div>
+	<div class="bb">
+		BB
+	</div>
+</body>
+</html>
+<!-- 
+ Box Model
+ 1. 모든 HTML요소들은 요소를 둘러싸고 있는 박스로 구성되어져 있다.
+ 2. CSS박스모델은 Html요소를 둘러싸고 있는  박스에 대한 정의이며 
+     하나의 요소에 대한 박스는 content(내용), padding(안쪽여백),border(테두리),
+     margin(바깥쪽여백)으로 구성된다.
+ 3. 요소 박스의 width은 콘텐츠의 넓이이다.
+ 
+ ie8이하 브라우저
+  margin-left + width + margin-right
+ 그외브라우저
+ margin-left + border-left + paddding-left + width + padding-right + border-right + margin-right 
+ -->

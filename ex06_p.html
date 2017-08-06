@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>p.test   p. test의 비교</title>
+	<style type="text/css">
+		 /*
+			  p.test : p요소중 .test클래스에 스타일을 적용한다.
+			  p .test : p요소 내부에서 .test클래스에 스타일을 적용한다.
+		 */
+		p{
+			width: 200px;
+			height: 100px;
+			border:solid  1px black;
+		}
+		p .test{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<p class="test">
+		first
+	</p>
+	
+	<p>
+		second&nbsp;&nbsp;
+		<span class="test">
+			korea
+		</span>
+	</p>
+</body>
+</html>

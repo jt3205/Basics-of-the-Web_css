@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/* div 요소의 자식요소들 중에서 홀수에 스타일을 적용한다 */
+		div :nth-child(odd){
+			color:red;
+		}
+
+		/* div 요소의 자식요소들 중에서 짝수에 스타일을 적용한다 */
+		div :nth-child(even){
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span>첫번째 자식</span>
+		<p>두번째 자식</p>
+		<p>세번째 자식</p>
+		<p>네번째 자식</p>
+	</div><br><br>
+
+	<div>
+		<p>first</p>
+		<p>second</p>
+	</div>
+</body>
+</html>
+
+
+

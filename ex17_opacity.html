@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>투명모드/불투명모드</title>
+	<style type="text/css">
+		img{
+			opacity: 0.3;
+		}
+		img:hover{
+			opacity: 1.0;
+		}
+		#a{
+			opacity: 0.0;
+		}
+		#b{
+			opacity: 1.0;
+		}
+		#a:hover{
+			visibility: visible;
+			opacity: 1.0;
+			/*border: 1px dotted red;*/
+		}
+		#b:hover{
+			visibility: hidden;
+			border: 1px dotted red;
+		}
+	</style>
+</head>
+<body>
+<h1>Opacity속성</h1>	
+<img src="image/pororo.jpg" width="150" height="120" alt="뽀로로1">
+<img src="image/pororo2.jpg" width="150" height="120" alt="뽀로로2">
+<br><br><br>
+
+<h1>Visibilty속성</h1>	
+<img id="a" src="image/pororo.jpg" width="150" height="120" alt="뽀로로1">
+<img id="b" src="image/pororo2.jpg" width="150" height="120" alt="뽀로로2">
+<br><br><br>
+
+</body>
+</html>
+<!--
+ 	http://www.w3schools.com    (교육사이트)
+-->

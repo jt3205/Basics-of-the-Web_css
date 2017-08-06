@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>가상클래스</title>
+	<style type="text/css">
+		p:first-child{
+			background-color: yellow;
+		}
+		p:nth-child(2){
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span>div와 span요소</span>
+		<!-- p요소가 div 요소의 두번째 자식요소로 사용이 
+        되었기 때문에 여기에는 스타일이 적용이 안됨-->
+		<p>div의 두번째 자식</p>
+		<p>div의 세번째 자식</p>
+	</div><br><br>
+
+	<div>
+		<!-- div요소의 첫번째 자식요소로 p요소가 사용이 되었기 때문에
+           여기에는 스타일이 적용됨 -->
+		<p>div의 첫번째 자식</p>
+		<p>div의 두번째 자식</p>
+	</div>
+</body>
+</html>
+
+

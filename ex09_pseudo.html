@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*
+	  가상요소 : 첫번째 줄이나 첫 번째 문자에 스타일을 지정하거나, 요소의 앞/뒤에 내용을 삽입할때 사용한다.
+	  가상이라는말 그대로 요소는 아니지만 요소처럼 스타일을 적용할 수 있다. 
+	*/
+	p:first-letter{
+		color:red;
+		font-size: 25px;
+		background-color: yellow;
+	}
+	h1:before{
+		content: "★";
+		color: blue;
+	}
+	h1:after{
+		content: "★";
+		color: blue;
+	}
+	</style>
+</head>
+<body>
+	<h1>주요내용</h1>
+	<p>In the following example, the selector matchers
+	the first element in all.</p>
+
+</body>
+</html>
+
